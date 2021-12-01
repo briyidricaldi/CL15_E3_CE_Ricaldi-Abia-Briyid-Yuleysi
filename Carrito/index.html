@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IESTP ADOLFO VIENRICH</title>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+<body style="background-image: url(./images/products/fondo.jpg)";>
+    <header>
+        <div class="header-section container">
+            <img class="logo" src="./images/logotecno.gif" alt="">
+            <strong><h3 style="font-family: fantasy; color: blue;font-size: 20px;">IESTP ADOLFO VIENRICH</h3></strong>
+            <div>
+                <img onmouseover="showCart(this)" class="cart" src="./images/cart.png" alt="">
+                <p class="count-product">0</p>
+            </div>
+            <div class="cart-products" id="products-id">
+                <p class="close-btn" onclick="closeBtn()">X</p>
+                <h3>Carrito de Compras</h3>
+                <div class="card-items">
+                    <div class="item">
+                        <img src="./images/products/certificado.jpg" alt="">
+                        <div class="item-content">
+                            <h5>Certificado de Estudios</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>Cantidad: 3</h6>
+                        </div>
+                        <span>X</span>
+                    </div>
+    
+                    <div class="item">
+                        <img src="./images/products/certificado.jpg" alt="">
+                        <div class="item-content">
+                            <h5>Certificado de Estudios</h5>
+                            <h5 class="cart-price">45.50$</h5>
+                            <h6>cantidad: 3</h6>
+                        </div>
+                        <span class="delete-product" data-id="">X</span>
+                    </div> 
+                </div>
+                <h2>Total: <strong class="price-total">0</strong> $</h2>
+            </div>
+        </div>
+    </header>
+    <section class="container">
+        <div class="products">
+            <div class="carts">
+                <div>
+                    <img src="./images/products/certificado.jpg" alt="">
+                    <p><span>45.50</span>$</p>
+                </div>
+                <p class="title">Certificado de Estudios</p>
+                <a href="" data-id="1" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/constancia.jpg" alt="">
+                    <p><span>40.90</span>$</p>
+                </div>
+                <p class="title">Constancia de Prácticas Profesionales</p>
+                <a href="" class="btn-add-cart" data-id="2">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/estudios.jpg" alt="">
+                    <p><span>25.50</span>$</p>
+                </div>
+                <p class="title"> Certificado de Estudios IESTP Adolfo Vienrich</p>
+                <a href="" data-id="3" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/iestp.jpg" alt="">
+                    <p><span>40.20</span>$</p>
+                </div>
+                <p class="title"> Formato del titulo</p>
+                <a href="" data-id="4" class="btn-add-cart">add to cart</a>
+            </div>
+            <div class="carts">
+                <div>
+                    <img src="./images/products/matricula20212.png" alt="">
+                    <p><span>30.50</span>$</p>
+                </div>
+                <p class="title"> Matricula IESTP ADOLFO VIENRICH</p>
+                <a href="" data-id="5" class="btn-add-cart">add to cart</a>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function showCart(x){
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn(){
+             document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <script src="./custom.js" ></script>
+</body>
+</html>
